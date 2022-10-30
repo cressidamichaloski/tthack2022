@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="resources.css">
+<title>resources</title>
+</head>
+
+<body>
+<h1>
+    RESOURCES
+</h1>
+
+ <div class="titles">
+    <button type="button" class="collapsible">For Women</button>
+    <div class="content">
+        <ul>
+            <li><a href="https://www.ahrq.gov/prevention/resources/womens-health.html">Health</a></li>
+            <li><a href="https://www.projecthope.org/women-carry-an-undue-mental-health-burden-they-shouldnt-have-to/05/2021/?utm_source=googlegrants&utm_medium=cpc&utm_term=women%20health&utm_campaign=Paid&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVPvM3oXnfW6luzDp3Znjz543wcJW_tMOe6L8wJLOsd10t_AdFM1IPsaAt7oEALw_wcB">Mental Health</a></li>
+            <li><a href="https://womenpowerlove.org/women-empowerment-resources/">Empowerment and Rights</a></li>
+            <li><a href="https://www.rosiesplace.org/">Shelter and Support</a></li>
+        </ul>
+</div> <!--end titles-->
+
+<div class="titles">
+    <button type="button" class="collapsible">For Black People</button>
+    <div class="content">
+        <ul>
+            <li><a href="https://www.crosscountry.com/blog/advance-black-health-and-wellness">Health and Wellness</a></li>
+            <li><a href="https://www.georgetownbehavioral.com/node/2529">Mental Health</a></li>
+            <li><a href="https://www.aacap.org/AACAP/Families_and_Youth/Resource_Libraries/Racism_Resource_Library.aspx">Anti-Racism</a></li>
+        </ul>
+</div>
+
+<div class="titles">
+    <button type="button" class="collapsible">For Asian People</button>
+    <div class="content">
+        <ul>
+            <li><a href="https://www.asianstudentalliance.org/">Asian Student Alliance</a></li>
+            <li><a href="https://www.advancingjustice-aajc.org/">Asian Americans Advancing Justice</a></li>
+            <li><a href="https://stopaapihate.org/">Stop AAPI Hate</a></li>
+            <li><a href="https://aapicommission.org/">MA AAPI Commission</a></li>
+        </ul>
+</div>
+
+<div class="titles">
+    <button type="button" class="collapsible">For Hispanic People</button>
+    <div class="content">
+        <ul>
+            <li><a href="https://www.thehispanicinstitute.net/">Hispanic Institute</a></li>
+            <li><a href="http://latinovictory.us/">Latino Victory Fund</a></li>
+        </ul>
+</div>
+
+<div class="titles">
+    <button type="button" class="collapsible">For Indigenous People</button>
+    <div class="content">
+        <ul>
+            <li><a href="https://www.culturalsurvival.org/resources">Cultural Survival Resources</a></li>
+        </ul>
+</div>
+
+<div class="titles">
+    <button type="button" class="collapsible">For Jewish People</button>
+    <div class="content">
+        <ul>
+            <li><a href="https://www.shalomdc.org/resources-and-tools-addressing-anti-semitism/">Shalon DC Resources</a></li>
+
+        </ul>
+</div>
+
+<div class="titles">
+    <button type="button" class="collapsible">For the LGBTQ+ Community</button>
+    <div class="content">
+        <ul>
+            <li><a href="https://www.thetrevorproject.org/">The Trevor Project</a></li>
+
+        </ul>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</body>
+
+</html>
